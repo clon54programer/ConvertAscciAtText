@@ -14,7 +14,7 @@ std::string ConvertAscciAtString(const std::string str) {
 
     for (int i = 0; i < str.length() + 1; i++) {
 
-        if (str[i] == '.' || i == str.length()) {
+        if (str[i] == '.' || i == str.length() || str[i] == '#') {
             temp.push_back(ConvertIntAtChar(std::stoi(str_convert)));
 
             //std::cout << "[DEBUG] Value of str_convert: " << str_convert << '\n';
