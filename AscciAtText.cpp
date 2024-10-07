@@ -38,6 +38,14 @@ std::string ConvertAscciAtString(const std::string str) {
     return temp;
 }
 
+std::string ConvertStrintAtAscci(const std::string str)
+{
+   
+
+
+    return std::string();
+}
+
 
 char ConvertIntAtChar(const int number) {
 

@@ -28,6 +28,7 @@ letras en minuzculas  97 a 122.
 
 
 std::string ConvertAscciAtString(const std::string str);
+std::string ConvertStrintAtAscci(const std::string str);
 /// <summary>
 /// Convierte un numero entre 0 y 255 a su equivalente del estandar ascci.
 /// </summary>
