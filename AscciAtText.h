@@ -26,7 +26,30 @@ letrass en mayusculas 65 a 90.
 letras en minuzculas  97 a 122.
 */
 
-
+/// <summary>
+/// Convierte una secuencia ascci a texto legible para humanos.
+/// Ejemplo:
+/// 77.121#105.155 == My is
+/// 
+/// Por favor siga las siguientes directrices, si quiere pasar una secuencia ascci.
+/// - Cada letra, debe estar en su equivalente en ascci.
+///   Ejemplo:
+///         10 -> n
+/// 
+/// - Cada letra de una palabra debe estar en su equivalente en ascci, y al final
+///   un punto excepto la ultima letra de la palabra
+///   Ejemplo:
+///     
+///     "My" -> 77.121
+/// 
+/// - En cada oracion, los espacios en blanco debe estar representados por una #.
+///   Ejemplo:
+///     
+///     "My is" -> 77.121#105.115
+/// 
+/// </summary>
+/// <param name="str"></param>
+/// <returns></returns>
 std::string ConvertAscciAtString(const std::string str);
 std::string ConvertStrintAtAscci(const std::string str);
 /// <summary>
