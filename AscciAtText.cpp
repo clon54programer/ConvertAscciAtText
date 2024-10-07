@@ -40,10 +40,22 @@ std::string ConvertAscciAtString(const std::string str) {
 
 std::string ConvertStrintAtAscci(const std::string str)
 {
-   
+    std::string temp = "";
+
+    for (int i = 0; i < str.length(); i++) {
+
+        if (str[i] != ' ') {
+            temp.append(std::to_string(ConvertIntAtChar(str[i])));
+            temp += '.';
+        }
+        else {
+            temp += '#';
+        }
+
+    }
 
 
-    return std::string();
+    return temp;
 }
 
 
