@@ -29,8 +29,8 @@ std::string ConvertAscciAtString(const std::string str) {
         /// convierta el string a un numero entero
         /// ningun caracter extraño se entromenta en la 
         /// conversion, que puede provocar un posible error.
-        if (str[i] != '.') { str_convert.push_back(str[i]); }
-        if (str[i] == '#') { temp.push_back(' '); }
+        if (str[i] != '.' && str[i] != '#') { str_convert.push_back(str[i]); }
+        if (str[i] == '#') { temp += " "; }
 
 
     }
