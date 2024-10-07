@@ -46,7 +46,9 @@ std::string ConvertStrintAtAscci(const std::string str)
 
         if (str[i] != ' ') {
             temp.append(std::to_string(ConvertIntAtChar(str[i])));
-            temp += '.';
+
+
+            if (str[i + 1] != ' ') { temp += '.'; }
         }
         else {
             temp += '#';
