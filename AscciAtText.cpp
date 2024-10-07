@@ -80,11 +80,11 @@ void TestAscciAtText()
     std::cout << "77.121 convert at string: " << ConvertAscciAtString("77.121")
         << '\n';
     assert("My" == ConvertAscciAtString("77.121"));
-    std::cout << "77.121#105.155 convert at string: " << ConvertAscciAtString("77.121#105.115")
+    std::cout << "77.121#105.115 convert at string: " << ConvertAscciAtString("77.121#105.115")
         << '\n';
     assert("My is" == ConvertAscciAtString("77.121#105.115"));
 
-    const char* result = ConvertStrintAtAscci("My is").c_str();
+    std::string result = ConvertStrintAtAscci("My is");
 
     std::cout << "My is convert a ascci secuence: " << result << '\n';
     assert(result == "77.121#105.115");
