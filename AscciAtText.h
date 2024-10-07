@@ -3,6 +3,30 @@
 
 #include <string>
 
+/*
+Sintaxis
+
+- una letra deber representado por su conversion en el estandar ascci.
+  - ejemplo:
+        G == 71
+
+- una palabra por las letras en su forma ascci, pero por cada letra debe haber
+un punto al final.
+
+  - ejemplo:
+        71.101.110.106.105.114.111 == Genjiro
+
+
+- una oracion, debe haber # por cada palabara.
+  - ejemplo:
+
+        77.121#110.97.108.101 == My name
+
+letrass en mayusculas 65 a 90.
+letras en minuzculas  97 a 122.
+*/
+
+
 std::string ConvertAscciAtString(const std::string str);
 /// <summary>
 /// Convierte un numero entre 0 y 255 a su equivalente del estandar ascci.
