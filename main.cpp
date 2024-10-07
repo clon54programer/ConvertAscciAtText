@@ -30,8 +30,7 @@ letras en minuzculas  97 a 122.
 int main(int argc, char const *argv[]) {
 
     TestAscciAtText();
-    std::cout << "77.121#105.155 convert at string: " << ConvertAscciAtString("77.121#105.115")
-        << '\n';
+    
 
   return 0;
 }

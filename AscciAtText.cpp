@@ -58,4 +58,7 @@ void TestAscciAtText()
     std::cout << "77.121 convert at string: " << ConvertAscciAtString("77.121")
         << '\n';
     assert("My" == ConvertAscciAtString("77.121"));
+    std::cout << "77.121#105.155 convert at string: " << ConvertAscciAtString("77.121#105.115")
+        << '\n';
+    assert("My is" == ConvertAscciAtString("77.121#105.115"));
 }
