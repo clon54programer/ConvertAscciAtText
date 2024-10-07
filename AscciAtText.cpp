@@ -55,7 +55,17 @@ std::string ConvertStrintAtAscci(const std::string str)
         }
 
     }
+     // Se llama a la funcion pop_back,
+    // porque luego que finalice el ciclo for
+    // al final del string, queda un punto
+    // por la especificacion, esto es un comportamiento
+    //innesperado, por esa se llama a pop_back
+    // para eliminar ese punto al final.
+    //
+    // Este bug, lo descubri gracias a las aserciones que
+    // se encuentran en TestAscciAtText.
 
+    temp.pop_back();
 
     return temp;
 }
@@ -87,5 +97,5 @@ void TestAscciAtText()
     std::string result = ConvertStrintAtAscci("My is");
 
     std::cout << "My is convert a ascci secuence: " << result << '\n';
-    assert(result == "77.121#105.115");
+   assert(result == "77.121#105.115");
 }
