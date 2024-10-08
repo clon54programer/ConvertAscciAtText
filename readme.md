@@ -12,4 +12,4 @@ convierte una secuencia en ascci a un string
     - Ejemplo:
         - str.lenght() * 3. Para las cadenas, que se usen para retornar.
         - sizeof(char) * 3. Para las cadenas de traducion ConvertAscciAtString.
-        
+- Implementar una funcionalidad para aceptar argumentos por consola para codificar y decodificar mensajes.        
